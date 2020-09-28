@@ -3,34 +3,32 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MadLibs.Controllers 
 {
-public class HomeController : Controller 
-{
-  [Route("/")]
-  public ActionResult Letter() 
+  public class HomeController : Controller 
   {
-    LetterVariable myLetterVariable = new LetterVariable();
-    myLetterVariable.Recipient = "Lima";
-    myLetterVariable.Sender = "Jasmine";
-    myLetterVariable.Location = "Paris";
-    myLetterVariable.Souvenir = "Bracelet";
-    return View( myLetterVariable);
+
+    [Route("/")]
+    public ActionResult Form() 
+    {
+      return View( myWordVariables);
     }
-    
-    [Route("/form")]
+      
+    [Route("/")] //Defaults to form
     public ActionResult Form() { return View(); }
 
-    [Route("/postcard")]
-    public ActionResult Postcard(string recipient, string sender, string location, string souvenir)
+    [Route("/MadLibs")]
+    public ActionResult MadLibs(string pluralNoun1, string pluralNoun2, string verb1, string noun1, string ingVerb, string pluralNoun3, string noun2, string pluralNoun4)
     {
-      LetterVariable myLetterVariable = new LetterVariable();
-      myLetterVariable.Recipient = recipient;
-      myLetterVariable.Sender = sender;
-      myLetterVariable.Location = location;
-      myLetterVariable.Souvenir = souvenir;
+      WordVariables myWordVariables = new WordVariables();
+      myWordVariables.PluralNoun1 = pluralNoun1;
+      myWordVariables.PluralNoun2 = pluralNoun2;
+      myWordVariables.Verb1 = verb1;
+      myWordVariables.Noun1 = noun1;
+      myWordVariables.IngVerb = ingVerb;
+      myWordVariables.PluralNoun3 = pluralNoun3;
+      myWordVariables.Noun2 = noun2;
+      myWordVariables.PluralNoun4 = pluralNoun4;
 
-
-      return View(myLetterVariable);
+      return View(myWordVariables);
     }
-
   }
 }
