@@ -22,3 +22,4 @@ C:\users\Jeffrey\documents\epicodus\csharp\madlibs.solution\madlibs\obj\Debug\ne
 C:\users\Jeffrey\documents\epicodus\csharp\madlibs.solution\madlibs\obj\Debug\netcoreapp2.2\MadLibs.dll
 C:\users\Jeffrey\documents\epicodus\csharp\madlibs.solution\madlibs\obj\Debug\netcoreapp2.2\MadLibs.pdb
 C:\users\Jeffrey\documents\epicodus\csharp\madlibs.solution\madlibs\obj\Debug\netcoreapp2.2\MadLibs.csproj.CopyComplete
+C:\users\Jeffrey\documents\epicodus\csharp\madlibs.solution\madlibs\obj\Debug\netcoreapp2.2\Razor\Views\Home\MadLibChoices.g.cshtml.cs

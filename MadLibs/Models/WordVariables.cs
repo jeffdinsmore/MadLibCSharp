@@ -11,4 +11,9 @@ namespace MadLibs.Models
     public string Noun2 { get; set; }
     public string PluralNoun4 { get; set; }
   }
+
+  public class MadlibChoice
+  {
+    public string Cake { get; set; }
+  }
 }

@@ -7,12 +7,14 @@ namespace MadLibs.Controllers
   {
 
     [Route("/")]
-    public ActionResult Form() 
+    public ActionResult MadLibChoices() 
     {
-      return View( myWordVariables);
+      MadlibChoice myMadlibChoice = new MadlibChoice();
+      myMadlibChoice.Cake = "cake";
+      return View( myMadlibChoice);
     }
       
-    [Route("/")] //Defaults to form
+    [Route("/form")] //Defaults to form
     public ActionResult Form() { return View(); }
 
     [Route("/MadLibs")]
